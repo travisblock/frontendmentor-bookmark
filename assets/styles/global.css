@@ -1,0 +1,56 @@
+/* color variable */
+:root {
+    --softBlue: hsl(231, 69%, 60%);
+    --softRed: hsl(0, 94%, 66%);
+
+    --grayishBlue: hsl(229, 8%, 60%);
+    --lightGray: #F7F7F7;
+    --darkBlue: hsl(229, 31%, 21%);
+    --font-weight-small: 400;
+    --font-weight-medium: 500;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+}
+a{
+    text-decoration: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+header {
+    /* margin: 2.666rem 9.1666rem; */
+    max-width: 111rem;
+    margin: 0 auto;
+    margin-top: 4.8rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
