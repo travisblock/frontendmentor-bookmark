@@ -1,0 +1,110 @@
+.download {
+    max-width: 144rem;
+    margin: auto;
+    margin-top: 16.3rem;
+    text-align: center;
+}
+
+.download .title {
+    font-weight: var(--font-weight-medium);
+    font-size: 3.5rem;
+    color: var(--darkBlue);
+    margin-bottom: 3rem;
+}
+
+.download .desc {
+    color: var(--grayishBlue);
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    display: block;
+    width: 55rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.download .cards {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.cards .browser-card:nth-child(2) {
+    margin-top: 4rem;
+}
+
+.cards .browser-card:nth-child(3) {
+    margin-top: 8rem;
+}
+
+.browser-card {
+    max-width: 24.8rem;
+    width: 100%;
+    height: 37.8rem;
+    padding: 3rem 2rem;
+    box-shadow: 0px 10px 20px -5px rgb(73 93 207 / 20%);
+    position: relative;
+    border-radius: 1rem;
+}
+
+.browser-card  h3 {
+    color: var(--darkBlue);
+    margin-top: 3.7rem;
+}
+
+.browser-card p {
+    color: var(--grayishBlue);
+    margin-top: 1.7rem;
+}
+
+.browser-card img {
+    width: 10.2rem;
+    height: 10.2rem;
+    margin-top: 4rem;
+}
+
+.dots-separator {
+    width: 100%;
+    height: 1.5rem;
+    border-bottom: 4px dotted var(--grayishBlue);
+    margin-top: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.browser-card .action {
+    margin-top: 9rem;
+}
+
+.action a {
+    padding: 1rem 2rem;
+    border-radius: .7rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1068px) {
+    .download {
+        max-width: unset;
+        margin: auto;
+        margin-top: 23rem;
+        text-align: center;
+        padding: 0 4.5rem;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .download .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .cards .browser-card:nth-child(2),
+    .cards .browser-card:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .download .desc{
+        width: 100%;
+    }
+}
