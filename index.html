@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./assets/styles/global.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/features.css" />
+    <link rel="stylesheet" href="./assets/styles/download.css" />
+    <link rel="stylesheet" href="./assets/styles/faq.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap"
         rel="stylesheet">
     <title>Frontend Mentor | Bookmark landing page</title>
@@ -75,26 +78,122 @@
             </p>
             <div class="tabs">
                 <ul class="tabs">
-                    <li class="tabs-item">
-                        <a href="#simple-bookmarking" class="tabs-button active">Simple Bookmarking</a>
+                    <li class="tabs-item active">
+                        <a href="javascript:void(0)" class="tabs-button">Simple Bookmarking</a>
                     </li>
                     <li class="tabs-item">
-                        <a href="#speedy-searching" class="tabs-button">Speedy Searching</a>
+                        <a href="javascript:void(0)" class="tabs-button">Speedy Searching</a>
                     </li>
                     <li class="tabs-item">
-                        <a href="#easy-sharing" class="tabs-button">Easy Sharing</a>
+                        <a href="javascript:void(0)" class="tabs-button">Easy Sharing</a>
                     </li>
                 </ul>
             </div>
             <div class="tabs-detail-group">
-                <div id="simple-bookmarking" class="tabs-detail">
+                <div class="tabs-detail">
                     <div class="illustration">
                         <img src="./assets/images/illustration-features-tab-1.svg">
                     </div>
                     <div class="text">
-                        <h3></h3>
+                        <h3>Bookmark in one click</h3>
+                        <p>
+                            Organize you bookmarks however you like. Our simple drag and drop interface gives you complete control over how you manage your favourite sites.
+                        </p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="download">
+            <h2 class="title">Download the extension</h2>
+            <p class="desc">
+                We've got more browsers in the pipeline. Please do let us know if you're interested in adding it to your browser.
+            </p>
+            <div class="browsers">
+                <div class="cards">
+                    <div class="browser-card">
+                        <img src="./assets/images/logo-chrome.svg">
+                        <h3>Add to Chrome</h3>
+                        <p>Minimum version 62</p>
+                        <div class="dots-separator"></div>
+                        <div class="action">
+                            <a href="#" class="btn-primary">Add & Install Extension</a>
+                        </div>
+                    </div>
+                    <div class="browser-card">
+                        <img src="./assets/images/logo-firefox.svg">
+                        <h3>Add to Firefox</h3>
+                        <p>Minimum version 55</p>
+                        <div class="dots-separator"></div>
+                        <div class="action">
+                            <a href="#" class="btn-primary">Add & Install Extension</a>
+                        </div>
+                    </div>
+                    <div class="browser-card">
+                        <img src="./assets/images/logo-opera.svg">
+                        <h3>Add to Opera</h3>
+                        <p>Minimum version 46</p>
+                        <div class="dots-separator"></div>
+                        <div class="action">
+                            <a href="#" class="btn-primary">Add & Install Extension</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2 class="title">Frequently Asked Questions</h2>
+            <p class="desc">Here are some of the most common questions we get. If you have any other questions, please don't hesitate to contact us.</p>
+            <div class="questions">
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="q-box">
+                            <span class="q">What is Bookmark?</span>
+                            <span class="icon">
+                                <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </div>
+                        <p class="a closed">
+                            Bookmark is a simple and easy to use bookmarking service. Users can add, edit, delete and search for their favourite websites. Browse through your bookmarks and find the website you want to visit.
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <div class="q-box">
+                            <span class="q">How can I request a new browser?</span>
+                            <span class="icon">
+                                <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </div>
+                        <p class="a closed">
+                            We're working on adding more browsers to the list. If you're interested in adding it to your browser, please let us know. We're always happy to hear from you.
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <div class="q-box">
+                            <span class="q">Is there a mobile app?</span>
+                            <span class="icon">
+                                <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </div>
+                        <p class="a closed">
+                            Mobile apps are coming soon. We're working hard to make Bookmark available on all devices. Hopefully you'll be the first to know. Stay tuned.
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <div class="q-box">
+                            <span class="q">What about other Chromium browsers?</span>
+                            <span class="icon">
+                                <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </div>
+                        <p class="a closed">
+                            Chrome is the only browser we've tested. We're working hard to add more browsers to the list. If you're interested in adding it to your browser, please let us know. We're always happy to hear from you.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="action">
+                <a href="#" class="btn-primary">More Info</a>
             </div>
         </section>
     </main>
