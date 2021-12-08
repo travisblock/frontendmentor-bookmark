@@ -17,13 +17,13 @@
     display: block;
     width: 55rem;
     margin: auto;
+    margin-bottom: 5rem;
 }
 
 
 ul.tabs li.tabs-item {
     list-style: none;
     display: inline-block;
-
 }
 
 .tabs-item a{
@@ -32,11 +32,130 @@ ul.tabs li.tabs-item {
     color: var(--grayishBlue);
 }
 
-.tabs-button.active {
+.tabs-item.active a{
     border-bottom: .2rem solid var(--softRed);
     color: var(--darkBlue);
 }
 
 .tabs{
     margin-bottom: 10.3rem;
+}
+
+.tabs-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12.7rem;
+    max-width: 116rem;
+    height: 34.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabs-detail .text h3 {
+    font-weight: var(--font-weight-medium);
+    font-size: 3rem;
+    color: var(--darkBlue);
+    margin-bottom: 3rem;
+}
+
+.tabs-detail .text p {
+    text-align: left;
+    width: 100%;
+}
+
+@media (max-width: 1284px) {
+    .tabs-detail {
+        gap: 7rem;
+        max-width: unset;
+        padding: 0 8rem;
+    }
+    .tabs-detail .illustration img {
+        width: 45rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.hero {
+        padding-bottom: 15rem;
+    }
+    .tabs-detail {
+        gap: 5rem;
+        max-width: unset;
+        padding: 0 4rem;
+    }
+    .tabs-detail .illustration img {
+        width: 38rem;
+        height: auto;
+    }
+    .tabs-detail .text p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 827px) {
+    .features {
+        margin-top: 0;
+    }
+
+    .tabs {
+        padding: 0 3rem;
+        margin-bottom: 7.2rem;
+    }
+
+    ul.tabs li.tabs-item {
+        display: block;
+        padding: 3rem;
+        border-bottom: 1px solid #DEDDE3;
+    }
+
+    ul.tabs li.tabs-item:first-child {
+        border-top: 1px solid #DEDDE3;
+    }
+
+    .tabs-item a, .tabs-item.active a{
+        padding: 0;
+        border: 0;
+    }
+
+    ul.tabs li.tabs-item.active::after {
+        content: '';
+        border-bottom: .2rem solid var(--softRed);
+        display: block;
+        position: absolute;
+        margin: auto;
+        margin-top: 3rem;
+        width: 35%;
+        left: 0;
+        right: 0;
+    }
+
+    .tabs-detail {
+        display: block;
+    }
+
+    .tabs-detail .illustration img {
+        max-width: 50rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .features > p {
+        width: unset;
+        padding: 0 3rem;
+    }
+
+    .tabs-detail .text h3 {
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .text {
+        margin-top: 4rem;
+    }
+
+    .tabs-detail .text p {
+        width: unset;
+    }
 }
