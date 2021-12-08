@@ -1,0 +1,83 @@
+.faq {
+    max-width: 144rem;
+    margin: auto;
+    margin-top: 16.3rem;
+    text-align: center;
+
+
+    padding-bottom: 5rem;
+}
+
+.faq .title {
+    font-weight: var(--font-weight-medium);
+    font-size: 3.5rem;
+    color: var(--darkBlue);
+    margin-bottom: 3rem;
+}
+
+.faq .desc {
+    color: var(--grayishBlue);
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    display: block;
+    max-width: 55rem;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.list {
+    list-style: none;
+}
+
+li.list-item .q-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem .5rem;
+    cursor: pointer;
+    color: var(--darkBlue);
+    text-align: left;
+}
+
+li.list-item{
+    border-bottom: 1px solid #dfdfdf;
+}
+
+svg.chevron {
+    width: 3rem;
+    stroke: var(--softBlue);
+}
+
+.questions {
+    max-width: 70rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+li.list-item .q {
+    font-size: 2rem;
+}
+
+p.a {
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--grayishBlue);
+    padding: 1rem 0 3rem 0;
+    line-height: 1.6;
+}
+
+p.a.closed {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        padding: 0 4rem;
+    }
+
+    li.list-item .q {
+        font-size: 1.8rem;
+    }
+}
