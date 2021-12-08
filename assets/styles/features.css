@@ -1,0 +1,42 @@
+.features {
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.features h2 {
+    font-weight: var(--font-weight-medium);
+    font-size: 3.5rem;
+    color: var(--darkBlue);
+    margin-bottom: 3.5rem;
+}
+
+.features p {
+    color: var(--grayishBlue);
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    display: block;
+    width: 55rem;
+    margin: auto;
+}
+
+
+ul.tabs li.tabs-item {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.tabs-item a{
+    padding: 3rem;
+    border-bottom: .1rem solid var(--grayishBlue);
+    color: var(--grayishBlue);
+}
+
+.tabs-button.active {
+    border-bottom: .2rem solid var(--softRed);
+    color: var(--darkBlue);
+}
+
+.tabs{
+    margin-bottom: 10.3rem;
+}
