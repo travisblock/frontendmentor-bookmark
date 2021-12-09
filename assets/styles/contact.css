@@ -1,0 +1,70 @@
+.contact {
+    background-color: var(--softBlue);
+    color: #fff;
+    margin-top: 11rem;
+}
+
+.contact-container {
+    max-width: 44.4rem;
+    margin: auto;
+    text-align: center;
+    padding: 7.1rem 0;
+}
+
+.text-promote {
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.contact .title {
+    font-size: 3rem;
+    margin: 4.6rem 0;
+    letter-spacing: .1.5rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.contact-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.contact-form .form-control {
+    flex: 1;
+    width: auto;
+    border-radius: .5rem;
+    border: 0;
+    outline: 0;
+    padding: 1.5rem 1.5rem;
+}
+
+.contact-form .form-control::placeholder{
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--grayishBlue);
+}
+.contact-form .btn-contact {
+    width: auto;
+    padding: 1.5rem 1.9rem;
+    border-radius: .5rem;
+    border: 0;
+    color: #fff;
+    background-color: var(--softRed);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 542px) {
+    .contact-container {
+        max-width: 100%;
+        padding: 5.5rem 4rem;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+}
