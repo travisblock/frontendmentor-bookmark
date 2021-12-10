@@ -3,11 +3,12 @@
 }
 
 .footer-container {
-    max-width: 111rem;
+    max-width: 80rem;
     margin: auto;
     padding: 3rem 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-links {
@@ -38,9 +39,44 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .footer-social ul li {
     display: inline-block;
-    margin-right: 2rem;
+}
+
+
+@media screen and (max-width: 880px) {
+    .footer-container {
+        max-width: 100%;
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links .brand {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .footer-links .links li{
+        display: block;
+        margin-right: 0;
+        padding: 2rem 0;
+    }
+
+    .footer-social {
+        margin-top: 3rem;
+    }
 }
